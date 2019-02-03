@@ -2,14 +2,18 @@
 <html lang="en">
 
 <head>
+  <title>Loan Calculator</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap.min.css">
-
-  <title>Loan Calculator</title>
+  <style>
+    #loading, #results{
+      display: none;
+    }
+  </style>
 </head>
 
 <body class="bg-dark">
@@ -24,7 +28,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text">$</span>
                 </div>
-                <input type="text" class="form-control" id="amount" placeholder="Loan Amount">
+                <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
               </div>
             </div>
             <div class="form-group">
@@ -43,9 +47,9 @@
             </div>
           </form>
           <!-- LOADER -->
-          <!-- <div id="loading">
+          <div id="loading">
             <img src="img/loading.gif" alt="">
-          </div> -->
+          </div>
           <!-- RESULTS -->
           <div id="results" class="pt-4">
             <h5>Results</h5>
